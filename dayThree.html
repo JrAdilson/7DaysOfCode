@@ -1,0 +1,64 @@
+<script>
+     const nome = prompt("Qual area vc quer seguir? Digite 1 para Front-End ou 2 para Back-End")
+     let resp = 0;
+     let area = 0;
+     if(nome==1){
+         resp = prompt(`Dentro do Front-End, você deseja continuar em 1 - Vue ou 2 - React?`)
+       if(resp==1){
+             alert('Você escolheu Front-End e Vue')
+            area = prompt('Você deseja seguir se desenvolvendo em Front ou prefere seguir em Fullstack? 1 - Seguir e 2 - FullStack')
+             if(area==1){
+                 alert('Você escolheu permanecer na carreira de Front-End e Vue')
+             }else if(area==2){
+                 alert('Você escolheu virar um Programador FullStack')
+             }else{
+             alert('Sem respostas válidas')
+            }
+         }else if(resp ==2){
+             alert('Você escolheu Front-End e React')
+             area = prompt('Você deseja seguir se desenvolvendo em Front ou prefere seguir em Fullstack? 1 - Seguir e 2 - FullStack')
+             if(area==1){
+                 alert('Você escolheu permanecer na carreira de Front-End e React')
+             }else if(area==2){
+                 alert('Você escolheu virar um Programador FullStack')
+             }else{
+             alert('Sem respostas válidas')
+         }
+         }else{
+             alert('Sem respostas válidas')
+         }
+     }else if(nome==2){
+         resp = prompt(`Dentro do Back-End, você deseja continuar em 1 - C# ou 2 - Java?`)
+         if(resp==1){
+            alert('Você escolheu Back-End e C#')
+             area = prompt('Você deseja seguir se desenvolvendo em Front ou prefere seguir em Fullstack? 1 - Seguir e 2 - FullStack')
+            if(area==1){
+                 alert('Você escolheu permanecer na carreira de Back-End e C#')
+             }else if(area==2){
+                 alert('Você escolheu virar um Programador FullStack')
+             }else{
+             alert('Sem respostas válidas')
+             }
+         }else if(resp ==2){
+             alert('Você escolheu Back-End e Java')
+            area = prompt('Você deseja seguir se desenvolvendo em Front ou prefere seguir em Fullstack? 1 - Seguir e 2 - FullStack')
+             if(area==1){
+                alert('Você escolheu permanecer na carreira de Back-End e Java')
+             }else if(area==2){
+               alert('Você escolheu virar um Programador FullStack')
+            }else{
+             alert('Sem respostas válidas')
+         }
+       }else{
+             alert('Sem respostas válidas')
+         }
+    }else{
+             alert('Sem respostas válidas')
+    }
+    for(i=0; i < 2; i++){
+        let areas = new Array()
+        areas.area = prompt("Tem alguma tecnologia que vc deseja seguir?")
+        areas.areas += areas.area
+        alert(areas.areas)
+    }
+</script>
